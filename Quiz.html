@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,51 +10,59 @@
 </head>
 <body>
         <header> 
-            <h2>Mitt quiz! Vem är du!? </h2>
+            <h1>Mitt quiz! Vem är du!?</h1>
+            <p> lorem text tihi </p>
         </header>
+
         <form>
-            <fieldset><h4>Vilket underlag springer du helst på?</h4>
+            <fieldset>
                 <legend>ThinkingEmoji</legend>
                 
                 <div class="Question1">
-                        <p>
-                            <input type="radio" id="q1a" name="q1" value="5"> 
-                            <label for="q1a">Asfalt</label>
-                            <input type="radio" id="q1b" name="q1" value="3">
-                            <label for="q1b">Grus</label>
-                            <input type="radio" id="q1c" name="q1" value="0">
-                            <label for="q1c">Sand</label>
-                        </p> 
+                    <h4>Vilket underlag springer du helst på?</h4>
+
+                    <input type="radio" id="q1a" name="q1" value="5"> 
+                    <label for="q1a">Asfalt</label>
+                    <input type="radio" id="q1b" name="q1" value="3">
+                    <label for="q1b">Grus</label>
+                    <input type="radio" id="q1c" name="q1" value="0">
+                    <label for="q1c">Sand</label>
                 </div>
     
                 <div class="Question2">
                     <h4>Fråga 2</h4>
-                    <p>
-                        <input type="radio" id="q2a" name="q2" value="5">
-                        <label for="q2a">Svar 1</label>
-                        <input type="radio" id="q2b" name="q2" value="3">
-                        <label for="q2b">Svar 2</label>
-                        <input type="radio" id="q2c" name="q2" value="0">
-                        <label for="q2c">Svar 3</label>
-                     </p> 
+                   
+                    <input type="radio" id="q2a" name="q2" value="5">
+                    <label for="q2a">Svar 1</label>
+                    <input type="radio" id="q2b" name="q2" value="3">
+                    <label for="q2b">Svar 2</label>
+                    <input type="radio" id="q2c" name="q2" value="0">
+                    <label for="q2c">Svar 3</label>
                 </div>
-    
             </fieldset>
+            
             <fieldset>
                 <legend>PepoG</legend>
                 <label for="q3Range">Hur viktigt är Pyjamasbyxor för dig?</label>
-                <p>
-                    Inte Viktigt 
+                <div class="range">
+                    <p>Inte Viktigt</p>
                     <input type="range" id=q3Range min="0" max= "4" value="2" >
-                    Mycket Viktigt
-                </p>    
+                    <p>Mycket Viktigt</p>
+                </div>   
             </fieldset>
-            <button type="button" id="FinalButton"> Visa Resultat</button>     
+            <button type="button" class="SendButton"> Visa Resultat</button>     
         </form>
-        <div class="results">DINA RESULTAT VISAS HÄR</div>
-        <footer>
-            <h3> Tack för att du använde vårt quiz!</h3>
-        </footer>
+        
+        <div class="Popup">
+            <div class="Box">
+                <h1>Resultat</h1>
+                <h3 class="result"></h3>
+              
+                <p>Tack för att du använde vårt quiz!</p>
+                <button class="ExitButton">Stäng</button>
+ 
+            </div>
+        </div>
 </body>
 </html>
 

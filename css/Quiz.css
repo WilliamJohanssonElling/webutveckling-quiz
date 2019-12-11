@@ -1,20 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
+fieldset h4 {
+    margin-bottom: 4px;
+}
 
+header p {
+    margin-bottom: 24px;
+}
+
+button {
+    background: rgb(230, 230, 230);
+    padding: 12px 24px;
+    background: rgb(0, 248, 186);
+    border-radius: 4px;
+    border: none;
+}
 
 body {
-    margin: 0px 20px;
+    margin: 24px 16px;
 }
 
-#FinalButton {
-    align-self: center;
+fieldset {
+    margin-top: 8px;
+    padding: 24px 24px;
+    border-color: rgb(0, 248, 186);
+    border-width: 3px;
+    border-radius: 4px;
+    border-style: solid;
+    box-shadow: none;
 }
 
-.results {
-    text-align: center;
+fieldset .Question2 h4 {
+    margin-top: 16px;
 }
 
-footer {
-    background-color: aqua;
-    text-align: center;
-    margin: 0px 40%;
+
+.range {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.SendButton {
+    margin-top: 16px;
+}
+
+.Popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.Popup .Box {
+    background-color: white;
+    border-radius: 4px;
+    margin-top: -10%;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    padding: 32px 48px;
+}
+
+.Popup .Box .result {
+    margin-top: 8px;
+    min-width: 480px;
+}
+
+.Popup .Box p {
+    margin-top: 8px;
+    margin-bottom: 32px;
 }

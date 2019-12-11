@@ -1,0 +1,20 @@
+
+
+
+body {
+    margin: 0px 20px;
+}
+
+#FinalButton {
+    align-self: center;
+}
+
+.results {
+    text-align: center;
+}
+
+footer {
+    background-color: aqua;
+    text-align: center;
+    margin: 0px 40%;
+}
